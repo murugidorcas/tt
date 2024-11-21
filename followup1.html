@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferences</title>
+    <style>
+        /* General page styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Soft gray background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container styling */
+        .container {
+            background-color: #ffffff; /* White background */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        /* Heading styling */
+        h2 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #3a6f3b; /* Green color */
+        }
+
+        /* Form styling */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            font-weight: bold;
+            display: block;
+            color: #3a6f3b; /* Green label text */
+            margin-bottom: 8px;
+        }
+
+        /* Styling for select elements */
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 2px solid #3a6f3b; /* Green border */
+            border-radius: 8px;
+            background-color: #f9f9f9; /* Light gray background */
+            transition: border-color 0.3s ease;
+        }
+
+        /* Focus effect for select elements */
+        select:focus {
+            border-color: #4CAF50; /* Bright green on focus */
+            outline: none;
+        }
+
+        /* Button styling */
+        .submit-btn {
+            background-color: #4CAF50; /* Bright green */
+            color: white;
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Button hover effect */
+        .submit-btn:hover {
+            background-color: #45a049; /* Darker green */
+        }
+
+        /* Button focus effect */
+        .submit-btn:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Select Your Hobbies, Interests, and Music Genre</h2>
+        <form>
+            <div class="form-group">
+                <label for="hobby">Hobby:</label>
+                <select id="hobby" name="hobby">
+                    <option value="reading">Reading</option>
+                    <option value="riding">Riding</option>
+                    <option value="swimming">Swimming</option>
+                    <option value="drawing">Drawing</option>
+                    <option value="singing">Singing</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="interest">Interest:</label>
+                <select id="interest" name="interest">
+                    <option value="technology">Technology</option>
+                    <option value="sports">Sports</option>
+                    <option value="photography">Photography</option>
+                    <option value="art">Art</option>
+                    <option value="music">Music</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="music-genre">Music Genre:</label>
+                <select id="music-genre" name="music-genre">
+                    <option value="Pop">Pop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Classical">Classical</option>
+                    <option value="Hip-hop">Hip-hop</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

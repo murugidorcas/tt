@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px; 
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cta-button{
+    background: rgb(83, 163, 139);
+    color:rgb(38, 122, 90) ;
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.788);
+}
+.cta-button :hover{
+    background: #054e30;
+}
+
+    </style>
+    <title>Sign In</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign In</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="second-name">Second Name:</label>
+                <input type="text" id="second-name" name="second-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+           
+            <button class="cta-button" onclick="location.href='followup1.html'">Submit</button>
+        </form>
+    </div>
+<script>
+    function enterSite(){
+        document.body.style.overflow ='auto';
+        document.querySelector('intro').style.display ='none';
+    }
+</script>
+</body>
+</html>
